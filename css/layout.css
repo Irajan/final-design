@@ -1,0 +1,349 @@
+.container{
+    max-width: 1920px;
+    width: 100%;
+}
+
+.social-links{
+    padding:5px 20%;
+}
+.nav-bar{
+    padding: 0 20%;
+}
+
+
+.links-item{
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.logo-wrapper,.footer-logo-wrapper{
+    padding:10px 0px;
+    width: 10%;
+}
+
+.logo-img{
+    max-width: 114px;
+    min-width: 100px;
+    width: 100%;
+}
+
+.nav-item{
+    display: inline-block;
+    margin-left:20px;
+}
+.nav-link{
+    display: inline-block;
+    padding: 20px 5px;
+}
+
+.corporate-tasks{    
+    position: relative;
+    height: 40vw;
+}
+
+.task-wrapper{
+    width: 59.37%;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-65%);
+}
+
+.customers-wrapper{
+    width: 73.35%;
+    margin: 20px auto;
+    padding: 40px 0px;
+}
+
+.customer{
+    display: inline-block;
+    width: 30%;
+    padding-right:15px ;
+}
+
+.customer-logos{
+    display: inline-block;
+    width: 69%;
+}
+.customer-logo-wrapper{
+    display: inline-block;
+    width: 24%;
+    height: 93px;
+    padding-left:20px;
+}
+
+.customer-logo{
+    max-width: 180px;
+    min-width: 80px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.content-img-wrapper{
+    width: 41%;
+    margin:10px 0px;
+}
+
+.content-img{
+    width: 100%;
+    height: 100%;
+    max-width: 780px;
+    min-width: 365px;
+    max-height: 635px;
+    min-height: 345px;
+}
+
+.special-fields{
+    width: 59%;
+    padding:  40px 0px;
+}
+
+.special-field{
+    padding-right:200px;
+}
+
+.special-list,.status{
+    width: 50%;
+    float: left;
+    margin-top: 40px;
+    padding:10px 0px;
+}
+.content-3{
+    padding:60px 0px;
+}
+
+.special-icon-wrapper{
+    float:left;
+    padding:0px 15px 20px 0px;
+    width: 50px;
+    height: 55px;
+}
+
+.special-topic{
+    padding-left: 15px;
+    float: left;
+    width: 80%;
+}
+
+.special-topic-description{
+    margin:10px 0px;
+}
+
+.content-wrapper{
+    width: 40%;
+    padding-top:200px;
+}
+
+.contact-wrapper
+,.contact-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+.name-field{
+    width: 50%;
+    float: left;
+}
+
+.form-label,.form-input{
+    width: 100%;
+    display: block;
+    margin:10px 0px;
+}
+
+.form-input{
+    height: 60px;
+}
+
+.footer{
+    width: 100%;
+    padding:50px 10%;
+    padding-bottom: 0px;
+}
+
+.copyright{
+    width: 30%;
+    float:left;
+    margin-right:50px
+}
+
+.footer-category,.footer-community,.footer-follow{
+    width: 15%;
+    float: left;
+    margin-left: 20px;
+}
+
+.footer-item{
+    padding:10px 0px;
+
+}
+
+.follow-item{
+    display: inline-block;
+    padding:0 5px;
+}
+.follow-link-icon{
+    width: 14px;
+    height: 12px;
+}
+
+
+/* Helper Classes */
+
+.f-l{
+    float: left;
+}
+
+.f-r{
+    float: right;
+}
+
+.m-t-10{
+    margin-top: 10px;
+}
+
+.m-t-20{
+    margin-top: 20px;
+}
+
+.m-b-20{
+    margin-bottom: 20px;
+}
+
+.m-y-20{
+    margin:20px 0px;
+}
+
+.m-y-10{
+    margin:10px 0px;
+}
+
+.m-y-40{
+    margin: 40px 0px;
+}
+.p-40{
+    padding:40px;
+}
+
+.p-y-5{
+    padding: 5px 0px;
+}
+
+.p-y-20{
+    padding:20px 0px;
+}
+.p-b-40{
+    padding-bottom:40px ;
+}
+.p-b-30{
+    padding-bottom: 30px;
+}
+.p-r-5{
+    padding-right: 5px;
+}
+
+.p-r-15{
+    padding-right: 15px;
+}
+.p-r-5{
+    padding-right: 5px;
+}
+
+.p-r-15{
+    padding-right: 15px;
+}
+
+.p-l-5{
+    padding-left: 5px;
+}
+
+.c-success{
+    color: #32d5ba;
+}
+.c-cool{
+    color: #89cff4;
+}
+.c-warm{
+    color: #ffd13c;
+}
+
+.c-danger{
+    color: #f44336;
+}
+
+.t-c{
+    text-align: center;
+}
+
+
+
+/* Breakponts for responsive design */
+
+@media only screen and (max-width: 992px) {
+
+    .social-links{
+        padding: 5px;
+    }
+    .nav-bar{
+        padding:0px 5px;
+    }
+    .corporate-tasks{    
+        height: 50vw;
+    }
+    .task-wrapper{
+        width: 80%;
+    }
+    .customers-wrapper{
+        width: 85%;
+        margin:5px auto;
+    }
+    .special-fields{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .special-field{
+        padding-left: 25px;
+        padding-right:5px ;
+    }
+    .special-field-description{
+        margin: 10px 0px;
+    }
+    .special-list{
+        margin-top: 0px;
+        width: 100%;
+        padding:0px;
+    }
+    .special-lists-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .special-icon-wrapper{
+        padding-left:5px;
+    }
+
+    .content-3{
+        padding: 15px 0px;
+    }
+    .content-wrapper{
+        padding-top:100px;
+    }
+
+    .status{
+        width: 45%;
+        margin-top:20px;
+    }
+
+    .contact-form{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
