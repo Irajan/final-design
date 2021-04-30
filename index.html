@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 strictl//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fire fly</title>
@@ -11,9 +10,10 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <div class="header">
             <div class="social-links">
                 <ul class="links-items">
+                   
                     <li class="links-item">
                         <a href="#">
                             <img src="./images/facebook-icon.png" alt="facebook">
@@ -52,12 +52,16 @@
                     </li>
                 </ul>
             </div>
-            <nav class="nav-bar clearfix">
-                <div class="logo-wrapper f-l">
-                    <img src="./images/logo.png" alt="logo" class="logo-img">
-                </div>
 
-                <ul class="nav-items f-r">
+            <div class="nav-bar clearfix">
+                <div class="logo-wrapper clearfix f-l">
+                    <img src="./images/logo.png" alt="logo" class="logo-img">
+                    <label for="collapse" class="nav-toggler-icon f-r">
+                        <img src="./images/drawer-icon.png" alt="toggle">
+                    </label>
+                </div>
+                <input type="checkbox" id="collapse" class="toggler-input">
+                <ul class="nav-items">
                     <li class="nav-item">
                         <a href="#" class="nav-link">Home</a>
                     </li>
@@ -76,16 +80,18 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">Contact Us</a>
                     </li>    
+                  
                 </ul>
-            </nav>
-        </header>
+               
+            </div>
+        </div>
 
         <div class="main-contents">
             <div class="content-1">
                 <div class="corporate-tasks">
                     <div class="task-wrapper">
                         <h1 class="task-heading p-y-20">
-                            We create an alround experience for your Corporate business
+                            We Create an Alround Experience for your Corporate Business
                         </h1>
                         <p class="task-description p-b-30">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
@@ -120,7 +126,7 @@
             </div>
             <div class="content-2 clearfix">
                 <div class="content-img-wrapper f-l">
-                    <img class="content-img" src="./images/laptop.png" alt="laptop image" class="content-img">
+                    <img src="./images/laptop.png" alt="laptop image" class="content-img">
                 </div>
                 <div class="special-fields f-l">
                     <div class="special-field">
@@ -198,7 +204,7 @@
                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor stit amet.
                         </p>
                     </div>
-                    <ul class="current-status-wrapper m-y-40">
+                    <ul class="current-status-wrapper">
                         <li class="status">
                             <div class="status-count c-success">785</div>
                             <div class="status-heading">Project Completed</div>
@@ -229,7 +235,7 @@
                     </p>
                 </div>
 
-                <form class="contact-form p-40">
+                <form action="#" class="contact-form p-40">
                     <div class="form-field m-y-20">
                         <label for="email" class="form-label">Email Addreess</label>
                         <input type="text" id="email" class="form-input">
@@ -246,14 +252,16 @@
                     </div>
                     <div class="form-field m-y-20">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-input"></textarea>
+                        <textarea id="message" class="form-input" rows="1" cols="1"></textarea>
                     </div>
-                    <button class="submit-btn m-t-10">Send Now</button>
+                    <div>
+                        <button class="submit-btn m-t-10">Send Now</button>
+                    </div>
                 </form>
             </div>
         </div>
 
-        <footer class="footer clearfix">
+        <div class="footer clearfix">
             <div class="copyright">
                 <div class="footer-logo-wrapper">
                     <img src="./images/logo.png" alt="logo">
@@ -263,15 +271,24 @@
                     and she at once took up the little golden key and hurried off to the garden door.
                 </p>
                 <div class="privacy-terms m-b-20 clearfix">
-                    <span class="f-l">Privacy Policy</span>
-                    <span class="f-r">Terms and Conditions</span>
-                </div>
+                    <span class="f-l">
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </span>
+                    <span class="f-r">
+                        <a href="#">
+                            Terms and Conditions
+                        </a>
+                    </span>
+                    </div>
                 <div class="copy-text">
                     Copyright &copy; 2016 ThemeXpert
                 </div>
 
             </div>
        
+            <div class="footer-items">
                 <div class="footer-category ">
                     <ul class="footer-items">
                         <li class="footer-item"> 
@@ -351,8 +368,9 @@
                         </li>
                     </ul>
                 </div>
+            </div>
 
-        </footer>
+        </div>
     </div>  
 </body>
 </html>

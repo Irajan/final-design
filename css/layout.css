@@ -1,6 +1,7 @@
 .container{
     max-width: 1920px;
     width: 100%;
+    overflow: hidden;
 }
 
 .social-links{
@@ -9,13 +10,20 @@
 .nav-bar{
     padding: 0 20%;
 }
-
+.nav-items{
+    float: right;
+}
+.nav-toggler-icon{
+    display: none;
+}
+.toggler-input{
+    display: none;
+}
 
 .links-item{
     display: inline-block;
     margin: 5px;
 }
-
 
 .logo-wrapper,.footer-logo-wrapper{
     padding:10px 0px;
@@ -74,7 +82,7 @@
 }
 
 .customer-logo{
-    max-width: 180px;
+    max-width: 185px;
     min-width: 80px;
     height: 100%;
     width: 100%;
@@ -131,6 +139,10 @@
     margin:10px 0px;
 }
 
+.current-status-wrapper{
+    margin:40px 0;
+}
+
 .content-wrapper{
     width: 40%;
     padding-top:200px;
@@ -141,8 +153,6 @@
     width: 50%;
     margin: 0 auto;
 }
-
-
 
 .name-field{
     width: 50%;
@@ -156,9 +166,17 @@
 }
 
 .form-input{
+    border-radius: 10px;
     height: 60px;
 }
 
+textarea.form-input{
+    height: 120px;
+}
+
+.form-input:focus{
+    border:1px solid #4caf50;
+}
 .footer{
     width: 100%;
     padding:50px 10%;
@@ -171,15 +189,24 @@
     margin-right:50px
 }
 
+
+.privacy-terms span{
+    width: 50%;
+}
+
+.footer-items{
+    width: 60%;
+    float: right;
+}
+
 .footer-category,.footer-community,.footer-follow{
-    width: 15%;
+    width: 33%;
     float: left;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .footer-item{
     padding:10px 0px;
-
 }
 
 .follow-item{
@@ -299,7 +326,7 @@
     }
     .customers-wrapper{
         width: 85%;
-        margin:5px auto;
+        margin:5px auto;    
     }
     .special-fields{
         padding: 0;
@@ -333,17 +360,180 @@
     }
 
     .status{
-        width: 45%;
+        width: 40%;
         margin-top:20px;
+    }
+
+    .contact-wrapper{
+        width: 80%;
     }
 
     .contact-form{
         width: 80%;
     }
+    .footer{
+        width: 100%;
+        padding:10px;
+    }
+    
 }
 
 
+@media only screen and (max-width: 769px){
+    .nav-toggler-icon{
+        display: inline-block;
+        padding:10px 0px;
+    }
 
+    .logo-wrapper{
+        width: 95%;
+    }
+    
+   .nav-items{
+        height: 0px;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+   }
 
+   .nav-item{
+        display: block;
+        text-align: center;
+   }
 
+   .nav-item:hover{
+       background-color:#4caf50;
+       cursor: pointer;
+   }
+    .toggler-input:checked + .nav-items {
+        height: fit-content;     
+    }
 
+    .nav-toggler-icon{
+        text-align: right;
+    }
+    .nav-items{
+        float:none
+    }
+    .customers-wrapper{
+        padding:10px
+    }
+
+    .task-description{
+        display: none;
+    }
+    .customer{
+        float: none;
+        width: 100%;
+    }
+    .customer-description{
+        display: none;
+    }
+    .customer-heading{
+        text-align: center;
+    }
+    .customer-logos {
+        float: none;
+        width: 100%;
+    }
+    .content-img-wrapper{
+        display: none;
+    }
+    .special-fields{
+        width: 100%;
+        padding:  40px 0px;
+    }
+    .special-list,.status{
+        width: 50%;
+        float: left;
+        padding:10px 0px;
+    }
+    .content-wrapper{
+        width: 100%;
+        padding:5px 25px;
+    }
+    .current-status-wrapper{
+        margin:0px
+    }
+    .status{
+        margin: 0;
+    }
+    .contact-description{
+        display: none;
+    }
+    .contact-form{
+        width: 90%;
+        margin:10px auto;
+    }
+    .footer{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .copyright{
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .privacy-terms{
+        width: 100%;
+        text-align: center;
+    }
+
+    .copy-text{
+        text-align: center;
+    }
+
+    .footer-logo-wrapper{
+        display: none;
+    }
+    .copyright-text{
+        display: none;
+    }
+    .footer-items{
+        width: 100%;
+    }
+    .footer{
+        padding-top:30px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .task-wrapper{
+        width: 100%;
+    }
+
+    .social-links{
+        display: none;
+    }
+    .customers-wrapper{
+        margin: 5px auto;
+        padding: 5px;
+    }
+
+    .customer-logos{
+        width: 100%;
+    }
+    .customer-logo-wrapper{
+        width: 40%;
+        display: inline-block;
+    }
+    .special-list,.status{
+        width: 100%;
+    }
+    .p-40{
+        padding:5px 10px;
+    }
+    .form-input{
+        border-radius: 2px;
+        height: 30px;
+    }
+    textarea.form-input{
+        height: 60px;
+    }
+
+    .footer-category,.footer-community,.footer-follow{
+        width: 100%;
+    }
+
+}
